@@ -1,0 +1,140 @@
+.html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+:root{
+
+     --nutmeg:hsl(14, 45%, 36%);
+
+     --dark-raspberry:hsl(332, 51%, 32%);
+
+     --white :hsl(0, 0%, 100%);
+     --rose-White:hsl(330, 100%, 98%);
+     --eggshell:hsl(30, 54%, 90%);
+     --light-grey:hsl(30, 18%, 87%);
+     --wenge-brown: hsl(30, 10%, 34%);
+     --dark-charcoal: hsl(24, 5%, 18%);
+}
+body{
+    background-color: var(--eggshell);
+    color: var(--wenge-brown);
+    min-height: 100vh;
+    font-family: 'Outfit',sans-serif;
+    line-height: 1.4;
+    display: grid;
+    place-content: center;
+}
+img
+{
+    max-width: 100%;
+    display: block;
+}h1,h2
+{
+    font-family: 'YoungSerif Regular',serif;
+    font-weight: 400;
+}
+h1{
+    color: var(--dark-charcoal);
+    font-size: 2rem;
+    margin-top: auto;
+}
+h2{
+    color: var(--nutmeg);
+    margin-bottom: 1rem;
+}
+.Recipe{
+    margin: 1rem 0;
+}
+
+.nutrition{
+    margin-top: 1rem;
+}
+
+li::marker{
+    color: var(--nutmeg);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+li{
+    margin-bottom: .5rem;
+}
+
+li span{
+    color: var(--wenge-brown);
+    font-weight: 700;
+}
+hr{
+    margin: 1.5rem;
+    border: 1px solid var(--light-grey);
+}
+.container{
+    max-width: 800px;
+    background-color: var(--white);
+    margin: .50rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.container .image{
+    overflow: hidden;
+}
+.container .image img{
+    border-radius: 1rem;
+}
+.description
+{
+    margin: 1.5rem,0;
+}
+h3{
+    color: var(--dark-raspberry);
+}
+.Ingredients li {
+    margin-bottom: .5rem;
+}
+.Ingredients li span{
+    font-weight: initial;
+}
+.preparation-time{
+    background-color: var(--rose-White);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.instructions li
+{
+    padding-left:1rem;
+}
+
+.nutrition .table{
+    margin-bottom: 1rem;
+}
+.nutrition .table .item{
+        padding: .75rem;
+       display: flex;
+       border-bottom: 1px solid var(--light-grey);
+}
+.nutrition .table .amount{
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+.nutrition .table .item > *{
+    width: 100px;
+    margin-right: auto;
+}
+@media(max-width:540px)
+{
+    h1{
+     margin-top: 2rem;
+    }
+
+    .container{
+        margin: 0;
+    }
+    .container image{
+        padding: 0;
+        border-radius: 0;
+    }
+}
